@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling ✈️</title>
+    <body>
+      <style>
+        body {
+          background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        }
+        h1 {
+          text-align: center;
+        }
+        h2 {
+          text-align: center;
+        }
+        img {
+          margin-left: 120px;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+          border: 1px solid teal;
+          background: white;
+          font-size: 18px;
+          border-radius: 5px;
+          padding: 10px 8px;
+          transition: 200ms ease-in-out;
+        }
+        button:hover {
+          background: gold;
+        }
+        p {
+          text-align: center;
+        }
+        .container {
+          max-width: 600px;
+          margin: auto;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+        }
+        .DarkTheme {
+          font-size: 10px;
+          background: black;
+          color: white;
+          padding: 5 8px;
+        }
+        .DarkTheme:hover {
+          color: black;
+          background: white;
+        }
+        footer {
+          text-align: center;
+          margin: 10px 0px;
+          font-size: small;
+        }
+        .plane {
+          border-radius: 10px;
+          transition: opactiy 150ms ease-in-out;
+        }
+        .plane:hover {
+          filter: contrast(80%);
+          transform: scale(1.1);
+        }
+        .grid {
+          margin: 15px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+        .grid img {
+          width: 100%;
+          border-radius: 8px;
+          object-fit: cover;
+          margin-left: 0;
+          height: 100%;
+        }
+        .dark {
+          background: linear-gradient(
+            112.1deg,
+            rgb(32, 38, 57) 11.4%,
+            rgb(63, 76, 119) 70.2%
+          );
+          color: yellow;
+        }
+        .dark .container {
+          background: rgba(255, 255, 255, 0.1);
+        }
+        .dark a {
+          color: yellow;
+        }
+      </style>
+      <body class="dark">
+        <button class="DarkTheme">Dark Theme</button>
+        <div class="container">
+          <h1>🌴 Travelling</h1>
+          <h2>One of my hobbies</h2>
+          <a href="https://en.wikipedia.org/wiki/Travel" ; target="blank" ;>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/810/original/airbus350-1000-v2-cloudscape-03_1200x675.jpg?1691686137"
+              alt="plane"
+              style="width: 350px; height: 200px"
+              class="plane"
+            />
+          </a>
+          <div class="grid">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/811/original/2TKWFXYN3HZEYRKHRAXR46GZSQ.jpg?1691686183"
+              alt="sandy"
+            />
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/812/original/640_tren.jpg?1691686228"
+              alt="train"
+            />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/813/original/Top-10-benefits-of-travelling-%E2%80%93-Learn-why-travelling-is-good-for-you.jpg?1691686292"
+              alt="road"
+            />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/814/original/Travel-Jobs-Make-Money-Travelling.jpg?1691686345"
+              alt="water"
+            />
+          </div>
+          <p>
+            Travel relieves stress and boosts mental health The most obvious and
+            potentially most important health benefit of travelling is stress
+            reduction. Traveling has the ability to take you out of our daily
+            routine and into new surroundings and experiences and this can reset
+            your body and mind.
+          </p>
+          <br />
+          <a
+            href="https://www.travelex.co.uk/travelex-hub/travel-tips/why-travel-is-good-for-your-health#:~:text=Travel%20relieves%20stress%20and%20boosts%20mental%20health&text=Not%20only%20does%20travel%20reduce,and%20helps%20with%20personal%20growth;%22"
+            ;
+            target="blank"
+          >
+            <button>The benefits of travel</button>
+          </a>
+        </div>
+        <footer>Coded by Gemma Tuck</footer>
+        <script>
+          function changeTheme() {
+            let body = document.querySelector("body");
+            if (body.classList.contains("dark")) {
+              body.classList.remove("dark");
+            } else {
+              body.classList.toggle("dark");
+            }
+          }
+
+          let DarkTheme = document.querySelector(".DarkTheme");
+          DarkTheme.addEventListener("click", changeTheme);
+        </script>
+      </body>
+    </body>
+  </head>
+</html>

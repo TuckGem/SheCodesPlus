@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee ☕</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-image: linear-gradient(to right, #42275a, #734b6d);
+        color: white;
+        line-height: 1.5;
+      }
+      h1 {
+        display: block;
+        padding: 10px;
+      }
+      h2 {
+        border: 5px solid white;
+        color: white;
+        margin: 0 auto;
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: large;
+        background: white;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0 2px 5px green;
+      }
+      button:hover {
+        background: white;
+        border: 1px solid;
+      }
+      span {
+        display: block;
+        font-weight: 100px;
+      }
+      a {
+        color: yellow;
+      }
+      img {
+        max-height: 500px;
+      }
+      p2 {
+        display: block;
+        font-size: smaller;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Coffee ☕</h1>
+      <h2>Does everyone else?</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/736/original/Coffee_Beans.jpg?1691608392"
+        alt="Coffee"
+      />
+      <p>
+        Brits drink around 95 million cups of coffee in
+        <strong>one</strong> single day. Be that for a good wake up call, a nice
+        coffee shop trip or a quiet sip whilst relaxing. <br />But Britian is
+        not where coffee beans come from. For that we have to travel all the way
+        to countries like Brazil, which is the <em>largest</em> importer of
+        coffee.
+      </p>
+      <span
+        >Lots of coffee suppliers aim to buy ethically and support
+        growers.</span
+      >
+      <br />
+      <a
+        href="https://www.nescafe.com/gb/understanding-coffee/coffee-statistics/"
+        target="blank"
+        class="learn more"
+      >
+        📖Learn more at Nescafe
+      </a>
+      <hr />
+      <button class="buy-button">🤔 The big question</button>
+      <p2><br />Coded by Gemma Tuck</p2>
+    </div>
+    <script>
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", doCoffee);
+
+      function doCoffee() {
+        let name = prompt("What is your name?");
+        let coffee = prompt("Do you love coffee?");
+
+        if (coffee.toLowerCase() === "yes") {
+          alert("That's a good answer" + " " + name + " " + "😉");
+        } else {
+          alert("Oh...do you prefer tea?" + " " + name + " " + "🍵");
+        }
+      }
+    </script>
+  </body>
+</html>

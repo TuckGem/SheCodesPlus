@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a33947d5d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        text-align: left;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #weatherinfo {
+        margin-top: 20px;
+      }
+      p {
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        font-size: larger;
+      }
+      .card {
+        width: 9rem;
+        height: 6rem;
+        position: relative;
+        top: -30px;
+        left: 200px;
+        text-align: left;
+        background-color: #cadefc;
+      }
+      .row {
+        margin-left: 10px;
+      }
+      .cloud {
+        position: relative;
+        left: 20px;
+        font-size: 20px;
+      }
+      .sun {
+        position: relative;
+        left: 235px;
+        font-size: 20px;
+      }
+      .wind {
+        position: relative;
+        left: 455px;
+        font-size: 20px;
+      }
+      .cloud-rain {
+        position: relative;
+        left: 670px;
+        font-size: 20px;
+      }
+      .location {
+        position: relative;
+        left: 600px;
+        top: -160px;
+        font-size: 70px;
+        color: #c3bef0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <input type="text" id="cityinput" placeholder="Enter city name" />
+      <button id="searchbutton">Search</button>
+      <div id="weatherinfo"></div>
+    </div>
+    <p>
+      London
+      <br />
+      21°C
+    </p>
+
+    <div class="card">
+      <div class="card-body">
+        <p2 class="card-text">
+          Friday <br />
+          Mostly Cloudy <br />
+          Chance of rain
+        </p2>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col">Sat</div>
+      <div class="col">Sun</div>
+      <div class="col">Mon</div>
+      <div class="col">Tue</div>
+    </div>
+    <i class="fa-solid fa-cloud cloud"></i>
+    <i class="fa-regular fa-sun sun"></i>
+    <i class="fa-solid fa-wind wind"></i>
+    <i class="fa-solid fa-cloud-rain cloud-rain"></i>
+    <i class="fa-solid fa-map-location-dot location"></i>
+    <br />
+  </body>
+</html>
